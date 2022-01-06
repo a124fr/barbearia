@@ -27,16 +27,16 @@
     <main>
         <form>
             <label for="nomesobrenome">Nome e sobrenome</label>
-            <input type="text" name="nomesobrenome" id="nomesobrenome" class="input-padrao" />
+            <input type="text" name="nomesobrenome" id="nomesobrenome" class="input-padrao" required />
 
             <label for="email">Email</label>
-            <input type="text" name="email" id="email" class="input-padrao" />
+            <input type="email" name="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com" />
 
             <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" id="telefone" class="input-padrao" />
+            <input type="tel" name="telefone" id="telefone" class="input-padrao" required placeholder="(xX) XXXXX-XXXX"/>
 
             <label for="">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="60" rows="10" class="input-padrao"></textarea>
+            <textarea name="mensagem" id="mensagem" cols="60" rows="10" class="input-padrao" required></textarea>
 
             <div>
                 <p>Como prefere o nosso contato?</p>
@@ -60,7 +60,7 @@
                 </select>
             </div>
 
-            <label class="checkbox"><input type="checkbox" name="novidades" id="novadades">Gostaria de receber nossas
+            <label class="checkbox"><input type="checkbox" name="novidades" id="novadades" checked>Gostaria de receber nossas
                 novidades por
                 email?</label>
 
